@@ -1,4 +1,4 @@
-pipeline {
+ipipeline {
     agent any
     stages {
         stage('Build') {
@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("wessamabdelwahab/react-app")
+                    app = docker.build("ehievien/react-app")
                     app.inside {
                         sh 'echo $(curl localhost:1233)'
                     }
